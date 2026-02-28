@@ -5,7 +5,6 @@ This project is a 3D replication of a formal English garden, featuring a central
 
 ## Reflection
 
-
 This project helped me craft exactly how to translate complex real-world objects into code using basic geometric primitives. I learned to look at a complex object (like a spiral topiary) and break it down into simple, stackable shapes (cones, cylinders, spheres) rather than trying to model an overly complex mesh from scratch.
 
 My design process was highly modular and component-based. I started by identifying all the primitive shapes needed. Then, I mapped out the material and texture requirements for each surface (grass, bark, pavement). Finally, I designed the lighting environment to bring the scene together, working from the general (ambient and directional sunlight) to the specific (a colored spotlight highlighting the main object).
@@ -18,7 +17,6 @@ I relied heavily on writing custom, reusable helper functions. For example, inst
 
 Iteration was the core of my development process in this project. I rarely got an object's scale, position, or lighting right on the first build. The development process involved placing an object, building the executable, reviewing the visual output, and tweaking the shader values or coordinate math. Iterative feedback was especially crucial when balancing the three-point lighting system so the scene felt like natural daylight without blowing out the textures.
 
-**How has your approach to developing code evolved throughout the milestones, which led you to the project’s completion?**
 Early in the course, my code was more procedural and hardcoded. As the milestones progressed to lighting and texturing, I shifted to a more declarative and organized state-machine approach. Before drawing a mesh, I set its state (texture, material, transformation) completely. This cleaner approach was the only way I could manage the complexity of rendering dozens of objects in the final milestone without severe bugs.
 
 ### How can computer science help me in reaching my goals?
